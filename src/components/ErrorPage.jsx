@@ -10,6 +10,8 @@ function ErrorPage() {
         >CRM Clientes</h1>
 
         <p className="text-center text-gray-800 uppercase mb-5">Ups! Hubo un error</p>
+        <p></p>
+        <p className="text-center font-extrabold text-blue-500 uppercase text-xl m-20">Este es un proyecto de prueba y no tiene una base de datos real</p>
         <p className="text-center">{error.statusText || error.message}</p>
     </div>
   )

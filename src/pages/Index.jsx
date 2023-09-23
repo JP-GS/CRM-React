@@ -12,6 +12,12 @@ export function loader() {
 function Index() {
 
   const clientes = useLoaderData()
+  if(Object.values(clientes).length === 0) {
+    throw new Response('', {
+      status: 404,
+      statusText: 'Este es un proyecto de práctica y no tiene una base de datos real'
+    })
+  }
 
   return (
     <>
